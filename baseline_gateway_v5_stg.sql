@@ -1,15 +1,4 @@
-/****** Object:  UserDefinedTableType [dbo].[messageList]    Script Date: 31-07-2024 20:00:57 ******/
-CREATE TYPE [dbo].[messageList] AS TABLE(
-	[created] [datetime] NOT NULL,
-	[processed] [datetime] NULL,
-	[completed] [datetime] NULL,
-	[messageText] [varchar](255) NULL,
-	[transactionGUID] [varchar](38) NULL,
-	[source] [varchar](15) NULL,
-	[destination] [varchar](15) NULL,
-	[type] [varchar](5) NULL,
-	[status] [varchar](10) NULL
-)
+
 GO
 /****** Object:  UserDefinedFunction [dbo].[CreateDateRange]    Script Date: 31-07-2024 20:00:57 ******/
 SET ANSI_NULLS ON
